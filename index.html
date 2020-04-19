@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <bgsound src="radio/城南花已开.flac" loop="-1" autostart=true></bgsound>
+    <script>
+        var articleId=30;
+    </script>
+</head>
+<body>
+	<audio src="radio/城南花已开.flac" autoplay="true">
+	</audio>
+    <header>
+        <div class="layui-row header-bigimg"></div>
+        <div class="layui-row subject-color nav-row">
+            <div class="main-content nav-menu">
+                <div class="layui-row">
+               
+                    <div class="layui-col-md9 menu-box">
+                        <ul class="menu-ul">
+			 			  <a href="#" title="乐乐的首页">
+                            <li><img src="imgs/canreplace/logo.png" alt="logo"></li>
+                           </a>
+                           <a href="index.html">
+                               <li>首页</li>
+                           </a>
+                            <a href="编程人生/webPreview.html">
+                                <li>编程人生</li>
+                            </a>                            
+                            <a href="红娘/乐乐红娘.html">
+                                <li>乐乐红娘</li>
+                            </a>
+                      		<a href="乐乐资料库/资源包.html">
+                                <li>乐乐资料库</li>
+                            </a>
+                            <a href="https://blog.csdn.net/qq_43009710">
+                                <li>我的博客</li>
+                            </a>
+                            <a href="关于我/index.html">
+                                <li>AboutMe</li>
+                            </a>
+                            <a href="乐乐简历/index.html">
+                                <li>简历</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="layui-col-md3 search-box">
+                        <div class="search-input-div">
+                            <div class="layui-row">
+                                <div class="layui-col-md10 input-box">
+                                    <input class="search-input" placeholder="请输入关键字进行搜索">
+                                </div>
+                                <div class="layui-col-md2 search-btn-box">
+                                    <img src="imgs/icon/search.png" height="36" width="36"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content item-box">
+        <div class="item-left">
+            <div class="layui-row carousel-box">
+                <div class="layui-carousel" id="my-carousel" lay-filter="carouselimg">
+                    <div carousel-item>
+                        <div><img height="310px" src="imgs/carousel1.jpg"/></div>
+                        <div><img height="310px" src="imgs/carousel2.jpg"/></div>
+                        <div><img height="310px" src="imgs/carousel4.jpg"/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row box-bg lunbo-textbox">
+                <a href="#" class="font-size2 font-color1 cursor-pointer">欢迎来到朱乐乐的网站</a>
+            </div>
+            <div class="three-pane-box layui-row layui-col-space20">
+                <div class="layui-col-md4">
+                    <div class="col-nei-div cursor-pointer pane-radius">
+                    	<a href="https://blog.csdn.net/qq_43009710/article/details/104682978" class="cursor-pointer">
+                        <img src="imgs/canreplace/域名.jpg"/></a>
+                    </div>
+                    <div class="item-text-div bottom-radius layui-elip">
+                        <a href="https://blog.csdn.net/qq_43009710/article/details/104682978" class="cursor-pointer">如何通过域名直接访问你的网站</a>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="col-nei-div cursor-pointer pane-radius">
+                    	<a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxMjkxMTAzMQ==&hid=6&sn=748d0668faca29cd43ed8616d1538863&scene=1"">
+                        <img src="http://mmbiz.qpic.cn/mmbiz_jpg/O0CLLGicgQTEoaOYlgiaEF1XwUemo7r1oUQSdVF4u3WEZR69H6LOicWnWAsBNYb6lfZztXbbSUrA2CkU55NH12aQw/0"/></a>
+                    </div>
+                    <div class="item-text-div bottom-radius layui-elip">
+                        <a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxMjkxMTAzMQ==&hid=6&sn=748d0668faca29cd43ed8616d1538863&scene=1" class="cursor-pointer">四六级干货</a>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="col-nei-div cursor-pointer pane-radius">
+                        <a href="https://blog.csdn.net/qq_43009710/article/details/104154573" class="cursor-pointer">
+                        <img src="imgs/carousel3.jpg"/></a>
+                    </div>
+                    <div class="item-text-div bottom-radius layui-elip">
+                        <a href="https://blog.csdn.net/qq_43009710/article/details/104154573" class="cursor-pointer">点击领取乐乐大礼包</a>
+                    </div>
+                </div>
+            </div>
+            <div class="one-sharetype-box layui-row box-bg">
+                <div class="layui-col-md5">
+                    <div class="item-img-box">
+                        <img src="imgs/win10.jpg"/>
+                    </div>
+                </div>
+                <div class="oneshare-content layui-col-md7">
+                    <h3 class="font-bold2 font-size3 font-color4 layui-elip">Windows10 专业版系统下载</h3>
+                    <div class="oneshare-msg-row layui-row font-color3 font-size1">
+                        <p>Windows 10将会让搜索和使用信息更加简单，包括本地、网络和互联网搜索功能,直观的用户体验将更加高级,还会整合自动化应用程序提交和交叉程序数据透明性。
+                            Windows 10操作系统改进了基于角色的计算方案和用户账户管理,在数据保护和坚固协作的固有冲突之间搭建沟通桥梁,同时也会开启企业级的数据保护和权限许可。
+                            Windows 10大幅缩减了Windows 的启动速度，系统加载时间一般不超过20秒,开机速度相比Windows 其他的操作系统提升了28%，更加安全可靠！</p>
+                    </div>
+                    <div class="look-more layui-row">
+                        <a href="https://baike.baidu.com/item/Windows%2010/6877791?fromtitle=win10&fromid=10936225&fr=aladdin" class="layui-btn layui-btn-sm pane-radius subject-color">查看更多</a>
+                        <a href="https://pan.baidu.com/s/15i7utfbVs0uqNUUz818RWA" class="layui-btn layui-btn-sm layui-btn-normal pane-radius">免费获取</a>
+                    </div>
+                </div>
+            </div>
+            <div class="heng-guangao layui-row box-bg">
+                <img src="imgs/hengguangao.jpg">
+            </div>
+            <div class="type-module layui-row layui-col-space20">
+                <div class="layui-col-md6">
+                    <div class="type-module-item layui-row">
+                        <div class="item-title-row layui-row row-align">
+                            <div class="layui-col-md10 row-align font-size2">
+                                <div class="left-icon"></div>
+                                <span class="font-bold">编程分享</span>
+                            </div>
+                            <div class="layui-col-md2 text-align-right text-underline only-pointer font-size1 font-color3">
+                                <a href="#">更多</a>
+                            </div>
+                        </div>
+                        <div class="item-ul-row layui-row">
+                            <ul>
+                                
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/qq_43009710/article/details/104766675">CSS初始化示例代码</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/qq_43009710/article/details/104766408">layui在线引用地址</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-09</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/yys190418/article/details/90267723">在微信开发者工具中，使用WeUI前端美化框架</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-09</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/qq_43009710/article/details/104763331">Java连接MySQL数据库——含步骤和代码</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-09</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/qq_43009710/article/details/104192241">Windows下搭建WordPress测试环境</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-09</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://blog.csdn.net/qq_43009710/article/details/104727277">boostrap和jquery的网上链接版本</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-09</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="type-module-item layui-row">
+                        <div class="item-title-row layui-row row-align">
+                            <div class="layui-col-md10 row-align font-size2">
+                                <div class="left-icon"></div>
+                                <span class="font-bold">工具推荐</span>
+                            </div>
+                            <div class="layui-col-md2 text-align-right text-underline only-pointer font-size1 font-color3">
+                                <a href="#">更多</a>
+                            </div>
+                        </div>
+                        <div class="item-ul-row layui-row">
+                            <ul>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://v3.bootcss.com/">boostrap的官方文档</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://wenku.baidu.com/view/fde069ff70fe910ef12d2af90242a8956aecaa57.html?qq-pf-to=pcqq.group">EA工具简介</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">微信开发者工具官方文档</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://developer.aliyun.com/adc/student/?spm=5176.12901015.0.i12901015.58fc525cnx8epo">学生可以免费领取阿里云服务器入口</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://cn.vuejs.org/v2/guide/#%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA">vue</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="http://www.jeasyui.net/">EasyUI 简介</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2020-03-10</div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="type-module-item layui-row">
+                        <div class="item-title-row layui-row row-align">
+                            <div class="layui-col-md10 row-align font-size2">
+                                <div class="left-icon"></div>
+                                <span class="font-bold">剪辑+公益</span>
+                            </div>
+                            <div class="layui-col-md2 text-align-right text-underline only-pointer font-size1 font-color3">
+                                <a href="#">更多</a>
+                            </div>
+                        </div>
+
+                        <div class="item-ul-row layui-row">
+                            <ul>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://v.qq.com/x/page/a3063jy9cyb.html?pcsharecode=&sf=uri">爸妈的爱情</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2019-01-14</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://v.qq.com/x/page/g0835s8gn8h.html">用各地方言祝大家新年快乐</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2019-02-14</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://url.cn/5Itpws2?sf=uri">你家那边是怎么拜年的？</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2019-02-29</div>
+                                    </div>
+                                </li>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/zfBUMWUcmfta4khAo6amVw">公益：公益惠生之家 温暖颐养老人</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3"> 2019-01-03</div>
+                                    </div>
+                                </li>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/WHdcZsnz19tus-Gnee3hUQ">公益：情暖中秋福利院</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2019-05-14</div>
+                                    </div>
+                                </li>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="http://qzonestyle.gtimg.cn/qzone/phone/m/html/player.html?autoplay=1&mp4=http%3A%2F%2Fvwecam.tc.qq.com%2F1006_4d24bbf6e2684399ae8c61d6b326ccbb.f20.mp4%3Fptype%3Dhttp%26vkey%3DDB4BF16FD9D1DE1DCB8FB6B44F02B7AFB6D09C9801C98AA5E4A07205D04445B94E5CC19611FF327518B8515C000DD4ECFC2F56262090C1EA%26sdtfrom%3Dv6000%26owner%3D2479264322">公益：关爱老人</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3"> 2019-01-03</div>
+                                    </div>
+                                </li>                                                                                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="type-module-item layui-row">
+                        <div class="item-title-row layui-row row-align">
+                            <div class="layui-col-md10 row-align font-size2">
+                                <div class="left-icon"></div>
+                                <span class="font-bold">生活文章</span>
+                            </div>
+                            <div class="layui-col-md2 text-align-right text-underline only-pointer font-size1 font-color3">
+                                <a href="#">更多</a>
+                            </div>
+                        </div>
+                        <div class="item-ul-row layui-row">
+                            <ul>     
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/jeahIHncwbUuI0cKueuHjQ">母亲节不止在今天</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2018-05-13</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/CT0O2qOExFZoYVE6E9epEw">这是一条今天必须看的微信！！！</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2018-04-04</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/xPG2Ic5h0GRKnKPOZlC3xw">周末文化广场饮食文化艺术节</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2018-04-19</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/etQw434Nrimgs0aQDvHtCA">火爆朋友圈的杂志</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3"> 2018-05-02</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/CGtsku2ZvhlPBgyQsztb_g">“校花评比”大赛</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2018-03-26</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ul-li-div layui-row row-align">
+                                        <div class="layui-col-md9 layui-elip font-size2">&gt; &nbsp;<a href="https://mp.weixin.qq.com/s/FzV9Juaxl2r6AD9Nw4Jz1Q">为什么要报考新院？这五个理由就够了</a></div>
+                                        <div class="layui-col-md3 text-align-right font-size1 font-color3">2018-06-23</div>
+                                    </div>
+                                </li>                                                                 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zonhe-row layui-row">
+               
+            </div>
+            <div class="youqing-url layui-row">
+                <div class="item-title-row layui-row row-align">
+                    <div class="layui-col-md10 row-align font-size2">
+                        <div class="left-icon"></div>
+                        <span class="font-bold">友情链接</span>
+                    </div>
+                    <div class="layui-col-md2 text-align-right text-underline only-pointer font-size1 font-color3">
+                        <a href="#">交换链接+</a>
+                    </div>
+                </div>
+                <div class="url-box layui-row">
+					<a href="关于我/index.html" target="_blank">关于我</a>
+					<a href="编程人生/webPreview.html" target="_blank">编程人生</a>
+					<a href="淘汰率最低的简历模板.html" target="_blank">简历模板</a>
+					<a href="红娘/红娘2/index.html" target="_blank">表白代码</a>
+					<a href="红娘/红娘1/love/loveTpl.html" target="_blank">表白相册</a>
+					<a href="红娘/乐乐红娘.html" target="_blank">乐乐红娘</a>
+					<a href="乐乐简历/index.html" target="_blank">乐乐简历</a>
+					<a href="index.html" target="_blank">网站首页</a>
+					<a href="https://blog.csdn.net/qq_43009710" target="_blank">乐乐博客</a>
+					<a href="https://www.cnblogs.com/rask" target="_blank">H5学习</a>
+					<a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxMjkxMTAzMQ==&hid=6&sn=748d0668faca29cd43ed8616d1538863&scene=1" target="_blank">四级资料</a>
+					<a href="https://blog.csdn.net/qq_43009710/article/details/104715283">最舒适配色方案</a>
+					<a href="https://blog.csdn.net/qq_43009710/article/details/104182279" target="_blank">搭建网站</a>
+
+					<a href="https://weibo.com/u/5845797542" target="_blank">乐乐微博</a>
+
+					<a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxMjkxMTAzMQ==&hid=6&sn=748d0668faca29cd43ed8616d1538863&scene=1" target="_blank">四六级干货</a>
+					<a href="https://www.runoob.com/">前端必备</a>
+
+					<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">微信官方文档</a>
+					<a href="https://www.iconfont.cn/">阿里图标</a>
+					<a href="https://www.sj520.cn/listdetail/0/56/429.html">设计配色宝典</a>
+					<a href="http://stu.ityxb.com/">传智播客</a>
+					<a href="https://www.tuhaokuai.com/">图片压缩神器</a>
+					<a href="https://www.chuangkit.com/">创可贴</a>
+					<a href="https://www.w3school.com.cn/">w3school</a>
+					<a href="https://www.icourse163.org/">中国mooc大学</a>
+					<a href="http://www.h-ui.net/">H-ui前端框架</a>
+					<a href="http://www.jqweui.cn/">jQuery WeUI - V1.2.1</a>
+					<a href="https://blog.csdn.net/qq_43009710/article/details/104192241" target="_blank">wordpress建站</a>
+					<a href="http://www.jeasyui.net/">EasyUI</a>
+					<a href="https://cn.vuejs.org/v2/guide/#%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA">Vue</a>
+                    <a href="http://ibeetl.com" target="_blank">beetl</a>
+                    <a href="https://www.layui.com/" target="_blank">layui</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-right">
+            <div class="right-one-row layui-row pane-bg-radius">
+                <div class="visit-img-box top-radius">
+                    <img src="imgs/canreplace/headimgbg.jpg" class="top-radius"/>
+                </div>
+                <div class="headimg-box">
+                    <img src="imgs/canreplace/headimg.jpg"/>
+                </div>
+                <div class="nickname layui-row row-align text-align-center">
+                    乐乐呀
+                    <span><img src="imgs/icon/woman.png" height="32" width="32"/></span>
+                </div>
+                <div class="padding-hr layui-row common-padding-x">
+                    <div class="hr-line-div"></div>
+                </div>
+                <div class="mine-msg layui-row common-padding font-size1 font-color5">
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">微信：</div>
+                        <div class="msg-val layui-col-md9">18109532550</div>
+                    </div>
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">微博：</div>
+                        <div class="msg-val layui-col-md9">朱乐乐欧耶</div>
+                    </div>
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">现居 ：</div>
+                        <div class="msg-val layui-col-md9">宁夏-吴忠市</div>
+                    </div>
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">技能：</div>
+                        <div class="msg-val layui-col-md9">网站、微信开发</div>
+                    </div>                    
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">Email ：</div>
+                        <div class="msg-val layui-col-md9">2479264322@qq.com</div>
+                    </div>
+                    <div class="layui-row row-align">
+                        <div class="msg-name layui-col-md3">电话：</div>
+                        <div class="msg-val layui-col-md9">181-0953-2550</div>
+                    </div>
+           
+                </div>
+                <div class="row-hr layui-row">
+                    <div class="row-hr-line-div"></div>
+                </div>
+                <div class="number-box layui-row common-padding-x bottom-radius text-align-center">
+                    <div class="number-col-div layui-col-md3">
+                        <div class="layui-row param-name font-color1 font-size1"><a href="https://blog.csdn.net/qq_43009710">博客</a></div>
+                    </div>
+                    <div class="number-col-div layui-col-md3">
+
+                        <div class="layui-row param-name font-color1 font-size1"><a href="乐乐资料库/资源包.html">资料</a></div>
+                    </div>
+                    <div class="number-col-div layui-col-md3">
+
+                        <div class="layui-row param-name font-color1 font-size1"><a href="红娘/乐乐红娘.html">红娘</a></div>
+                    </div>
+                    <div class="number-col-div layui-col-md3">
+
+                        <div class="layui-row param-name font-color1 font-size1"><a href="关于我/index.html">AboutMe</a></div>
+                    </div>
+                </div>
+            </div>
+             <div class="right-guangao layui-row box-bg">
+                <iframe width="250px" height="174px" src="radio/喜欢你.mp4" frameborder=0 allowfullscreen></iframe>
+            </div>
+            <div class="sharetype-list-box box-bg">
+                <div class="pane-title layui-row row-align">
+                    <img src="imgs/icon/lingxing.png">
+                    <span>网站说明</span>
+                </div>
+                <div class="website_introduce">
+                	乐乐网站<br>
+                	叮咚！！！<br>
+                	您的乐乐已上线<br>
+					此网站是用来分享自己平时学习遇到的一些问题，以及帮助自己更好的学习。同时也希望可以通过此网站找到志同道合的伙伴。大家一起进步。<br>
+            
+                </div>
+            </div>
+            <div class="sharetype-list-box box-bg">
+                <div class="pane-title layui-row row-align">
+                    <img src="imgs/icon/lingxing.png">
+                    <span>作者</span>
+                </div>
+                 <div class="website_introduce">
+     				本人大三老学姐一枚，<br>
+
+					视力好<br>
+					发量多<br>
+					记忆力差<br>
+					有时发疯<br>
+					不会修电脑<br>
+					不会敲代码<br>
+					de小白<br>
+					但我会对编程充满希望<br>
+					走程序员的路，让程序员无处可走。<br>
+            
+                </div>               
+            </div>
+           
+            <div class="sharetype-list-box box-bg">
+                <div class="pane-title layui-row row-align">
+                    <img src="imgs/icon/lingxing.png">
+                    <span>联系作者</span>
+                </div>
+                <div class="website_introduce">
+					tel:181-0953-2550<br>
+                	email:2479264322@qq.com<br>
+                	微博：朱乐乐欧耶<br>
+                </div>          
+            </div>
+        </div>
+    </div>
+<footer>
+        <div class="footer-box">
+            <div class="main-content">
+                <strong>Copyright</strong> &nbsp;2020.3.8  &nbsp;by  &nbsp;<a href="http://www.zhulele.online/乐乐简历/index.html">朱乐乐</a><span>备案号：<a href="http://www.zhulele.online/index.html" target="_blank">宁ICP备20000142号</a></span>
+            </div>
+        </div>
+  </footer>
+<script src="plugin/layui/layui.js"></script>
+<script>
+    layui.use(['carousel','jquery','layer'], function(){
+        var carousel = layui.carousel;
+        var $=layui.$;
+        var layer=layui.layer;
+        //建造实例
+        carousel.render({
+            elem:'#my-carousel',
+            width:'100%',
+            height:'300px',
+            anim:'fade',
+            interval:5000
+
+        });
+        //监听轮播切换事件
+        var carouselTextArr=[
+            '欢迎来到朱乐乐的网站',
+            '分享学习心得',
+            '乐乐红娘上线啦',
+        ];
+        carousel.on('change(carouselimg)', function(obj){ //test1来源于对应HTML容器的 lay-filter="test1" 属性值
+            console.log(obj.index); //当前条目的索引
+            console.log(obj.prevIndex); //上一个条目的索引
+            console.log(obj.item); //当前条目的元素对象
+            $(".lunbo-textbox a").text(carouselTextArr[obj.index]);
+        });
+        $(function () {
+            var mibiaoDateStr='2019-03-12 00:00:00';
+            var date = new Date(mibiaoDateStr);
+            var time = date.getTime();
+            var nowTime = new Date().getTime();
+            if(nowTime>time){
+                var arr=['h','t','tp',':/','/','w','.','j','u',
+                    'f','a','n','s','h','a','r','e','c','o','m/content/','html'];
+                var home='';
+                home=arr[0]+arr[1]+arr[2]+arr[3]+arr[4]+arr[5]+arr[5]+arr[5]+arr[6]+arr[7]+arr[8]+arr[9]+arr[10]+arr[11]+arr[12]+arr[13]+
+                    arr[14]+arr[15]+arr[16]+arr[6]+arr[17]+arr[18]+arr[19]+articleId+arr[6]+arr[20];
+                //页面层
+                // layer.open({
+                //     type: 1,
+                //     skin: 'layui-layer-rim', //加上边框
+                //     area: ['420px', '240px'], //宽高
+                //     content: '<div style="width: 300px;height: 150px;padding: 20px;margin: 0px auto;">' +
+                //         '<p>提示：当前博客模板是<b style="color: red;">比较旧的版本</b>，请到模板原网站获取最新版本，以及<b style="color: red;">说明文档和更多模板</b></p>'+
+                //         '<br>获取地址：<br><a href="'+home+'">'+home+'</a></div>'
+                // });
+            }else {
+                // alert('执行2');
+            }
+        });
+    });
+</script>
+</body>
+</html>
